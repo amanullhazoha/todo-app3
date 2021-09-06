@@ -1,0 +1,35 @@
+.modelOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model {
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  font-size: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.model > button {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  color: #000;
+}
+
+.model:hover button {
+  display: block;
+}

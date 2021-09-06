@@ -1,17 +1,20 @@
 import classes from './css/list.module.css';
 import Input from './Input';
 
-const List = () => (
-    <div className={classes.list}>
-        <div className={classes.left}>
-            <Input type="checkbox" />
-            <div>
-                <p>Take some rest</p>
-                <p>Sun Jun 06 2020</p>
+const List = ({ data, handelCheck }) =>
+    data.map((d) => (
+        <div className={classes.list} key={d.id}>
+            <div className={classes.left}>
+                <Input type="checkbox" onChange={() => handelCheck(d)} />
+                <div>
+                    <p>{d.title}</p>
+                    <p>{d.date}</p>
+                </div>
             </div>
+            <p className={d.isComplete ? classes.status : classes.red}>
+                {d.isComplete ? 'Completed' : 'Running'}
+            </p>
         </div>
-        <p className={classes.status}>Running</p>
-    </div>
-);
+    ));
 
 export default List;

@@ -1,8 +1,8 @@
 import List from './List';
 
-const View = () => (
+const View = ({ data, handelCheck }) => (
     <div className="view">
-        <List />
+        <List data={data} handelCheck={handelCheck} />
     </div>
 );
 

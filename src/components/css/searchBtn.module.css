@@ -3,6 +3,10 @@
   color: #fff;
 }
 
+.searchBtn .active {
+  background: rgb(207, 105, 233);
+}
+
 .searchBtn button:hover {
   background: #343746;
 }

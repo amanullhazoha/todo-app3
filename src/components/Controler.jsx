@@ -3,11 +3,11 @@ import DeleteBtn from './DeleteBtn';
 import SearchBtn from './SearchBtn';
 import ViewBtn from './ViewBtn';
 
-const Controler = () => (
+const Controler = ({ handelSearch, search, handelView, view, handelDelete }) => (
     <div className={classes.controler}>
-        <SearchBtn />
-        <ViewBtn />
-        <DeleteBtn />
+        <SearchBtn handelSearch={handelSearch} search={search} />
+        <ViewBtn handelView={handelView} view={view} />
+        <DeleteBtn handelDelete={handelDelete} />
     </div>
 );
 
