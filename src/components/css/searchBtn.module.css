@@ -1,0 +1,14 @@
+.searchBtn button {
+  background: #282a36;
+  color: #fff;
+}
+
+.searchBtn button:hover {
+  background: #343746;
+}
+
+@media screen and (max-width: 768px) {
+  .searchBtn {
+    text-align: center;
+  }
+}

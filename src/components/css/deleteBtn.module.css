@@ -1,0 +1,32 @@
+.deleteBtn {
+  text-align: end;
+}
+
+.deleteBtn button {
+  color: #fff;
+  background: #ff0101;
+}
+
+.deleteBtn button:hover {
+  background: #f07979;
+}
+
+@media screen and (max-width: 1040px) {
+  .deleteBtn {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .deleteBtn {
+    text-align: center;
+  }
+
+  .deleteBtn {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}

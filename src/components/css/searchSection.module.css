@@ -1,0 +1,12 @@
+#searchSection {
+  background: #65bc6f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#searchSection h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}

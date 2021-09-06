@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    max-width: 1020px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

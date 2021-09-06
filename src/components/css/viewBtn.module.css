@@ -1,0 +1,11 @@
+.viewBtn {
+  text-align: center;
+}
+
+.viewBtn label {
+  font-weight: 600;
+}
+
+.viewBtn label:first-child {
+  margin-right: 5px;
+}

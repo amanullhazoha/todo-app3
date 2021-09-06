@@ -1,0 +1,28 @@
+.controler {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 1140px) {
+  .controler {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .controler {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .controler {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding-bottom: 0;
+  }
+}
